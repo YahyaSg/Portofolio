@@ -1,0 +1,307 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-weight: 200;
+}
+
+p {
+  color: #8892b0;
+}
+
+.modal-body {
+  color: #000000;
+  padding: 5em;
+}
+
+.active-nav {
+  color: #5dedcc !important;
+  font-weight: 400 !important;
+}
+
+.active-tabs {
+  border-bottom: 3px solid #5dedcc !important;
+}
+
+.content {
+  display: none;
+}
+
+.noContent {
+  display: none;
+}
+// Navbar
+.navbar {
+  background-color: #0a192f;
+}
+
+.navbar-brand {
+  img {
+    max-height: 50px;
+  }
+}
+
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      font-weight: 200;
+      color: #ccd6f6;
+
+      &:hover {
+        color: #5dedcc;
+      }
+    }
+  }
+}
+
+.social-media {
+  margin-top: 100px;
+  left: auto;
+  right: 40px;
+  bottom: 0px;
+  z-index: 10px;
+
+  .icon {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  ul li {
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  svg {
+    fill: #ccd6f6;
+    &:hover {
+      fill: #5dedcc;
+    }
+  }
+
+  .line {
+    border-left: 1px solid #ccd6f6;
+    height: 100px;
+  }
+}
+
+header {
+  padding-top: 160px;
+  h6 {
+    color: #5dedcc;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  p {
+    line-height: 30px;
+  }
+}
+
+.btn-download {
+  border: 1px solid #5dedcc;
+  color: #5dedcc;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &:hover {
+    background: rgba(93, 237, 204, 0.2);
+    color: #5dedcc;
+    border: 1px solid #5dedcc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
+
+// About
+.section-about {
+  margin-top: -50px;
+
+  p {
+    line-height: 30px;
+  }
+
+  img {
+    margin-top: 20px;
+  }
+}
+
+// Portofolio
+.section-portofolio {
+  margin-top: -10px;
+  .navbar-collapse {
+    .nav-item {
+      .nav-link {
+        margin-right: 50px;
+        margin-bottom: 30px;
+        padding: 0px;
+        color: #ccd6f6;
+        font-size: 20px;
+        font-weight: 400;
+
+        &:hover {
+          border-bottom: 3px solid #5dedcc;
+        }
+      }
+    }
+  }
+
+  .porto-content {
+    .porto-item {
+      .card-porto {
+        min-height: 500px;
+        background-color: #0a192f;
+        box-shadow: 10px 10px 20px 0 rgba(10, 25, 47, 0.25),
+          -5px -5px 20px 0 rgba(204, 214, 246, 0.3);
+        color: #ccd6f6;
+        padding: 20px;
+        margin-bottom: 20px;
+        .inner {
+          overflow: hidden;
+
+          img {
+            transition: all 1.5s ease;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .figure-img {
+          position: relative;
+
+          a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 15px;
+            background-color: rgba(10, 25, 47, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Certificate
+.section-certif {
+  margin-top: -10px;
+}
+
+.certif-content {
+  .card-certif {
+    min-height: 350px;
+    background-color: #0a192f;
+    box-shadow: -5px -5px 20px #21334e, 10px 10px 20px #061225;
+    color: #ccd6f6;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .creden {
+      p {
+        font-size: 14px;
+        font-weight: 400;
+      }
+      a {
+        color: #ccd6f6;
+        text-decoration: none;
+
+        &:hover {
+          color: #5dedcc;
+        }
+      }
+    }
+    .figure-img {
+      position: relative;
+
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        background-color: rgba(10, 25, 47, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.section-get-touch {
+  margin-top: -50px;
+  line-height: 30px;
+}
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section {
+  padding-top: 10rem;
+}
+
+@media (min-width: 992px) {
+  .social-media {
+    margin-top: -400px;
+    position: fixed;
+    left: auto;
+    right: 40px;
+    bottom: 0px;
+    z-index: 10px;
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+  }
+
+  header {
+    padding-top: 180px;
+
+    .illustrasi {
+      margin-top: -70px;
+    }
+  }
+
+  .section-about {
+    margin-top: 50px;
+    img {
+      margin-top: -60px;
+    }
+  }
+
+  .section-portofolio {
+    margin-top: 60px;
+  }
+
+  .section-get-touch {
+    margin-top: -10px;
+  }
+
+  footer {
+    margin-top: 200px;
+    margin-bottom: 30px;
+  }
+}
